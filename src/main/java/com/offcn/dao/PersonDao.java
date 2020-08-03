@@ -11,5 +11,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 public interface PersonDao extends JpaRepository<Person,Long> {
     @RestResource(path = "login",exported = false)
     public Person findByNameIsAndPasswordEquals(String name,String password);
+    //第三方库律师代理费来到了防空导弹
 
 }
